@@ -67,3 +67,29 @@ Lemma add_tilt:
 A -> ~~A.
 Proof.
 intro.
+intro.
+apply H0.
+assumption.
+
+Theorem contraposition:
+(A -> B) -> ~B -> ~ A.
+Proof.
+intros.
+intro.
+apply H0.
+apply H.
+assumption.
+
+Theorem almost_TND:
+~~(A \/ ~A).
+Proof.
+intro.
+apply H.
+right.
+intro.
+apply H.
+left.
+assumption.
+
+
+
