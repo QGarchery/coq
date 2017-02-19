@@ -1,0 +1,60 @@
+DIGEST 895aa16aa08113ff554def621111e51a
+Ftp1_2
+ax 10:10 <> X
+ax 12:12 <> Y
+ax 31:31 <> A
+ax 33:33 <> B
+R37:37 tp1_2 <> X defax
+ax 58:58 <> R
+R67:67 tp1_2 <> Y defax
+R62:62 tp1_2 <> X defax
+prf 87:96 <> and_forall
+R99:99 Coq.Init.Logic <> :type_scope:x_'<->'_x not
+R120:125 Coq.Init.Logic <> :type_scope:x_'<->'_x not
+R113:116 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R110:110 tp1_2 <> A defax
+R112:112 tp1_2 <> x var
+R117:117 tp1_2 <> B defax
+R119:119 tp1_2 <> x var
+R126:126 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R140:145 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R159:159 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R137:137 tp1_2 <> A defax
+R139:139 tp1_2 <> x var
+R156:156 tp1_2 <> B defax
+R158:158 tp1_2 <> x var
+prf 293:301 <> or_exists
+R304:304 Coq.Init.Logic <> :type_scope:x_'<->'_x not
+R328:333 Coq.Init.Logic <> :type_scope:x_'<->'_x not
+R305:311 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R316:317 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R315:315 tp1_2 <> X defax
+R321:324 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R318:318 tp1_2 <> A defax
+R320:320 tp1_2 <> x var
+R325:325 tp1_2 <> B defax
+R327:327 tp1_2 <> x var
+R334:334 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R351:356 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R372:372 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R335:341 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R346:347 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R345:345 tp1_2 <> X defax
+R348:348 tp1_2 <> A defax
+R350:350 tp1_2 <> x var
+R357:363 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R367:368 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R366:366 tp1_2 <> X defax
+R369:369 tp1_2 <> B defax
+R371:371 tp1_2 <> x var
+prf 594:600 <> one_wit
+R644:650 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R652:653 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R654:654 tp1_2 <> R defax
+R658:658 tp1_2 <> y var
+R656:656 tp1_2 <> x var
+R604:610 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R612:613 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R624:624 tp1_2 <> R defax
+R628:628 tp1_2 <> y var
+R626:626 tp1_2 <> x var
