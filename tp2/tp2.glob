@@ -1,0 +1,78 @@
+DIGEST 214a2f2dfa08d383a0097f842ed5528b
+Ftp2
+ax 10:10 <> E
+ax 29:29 <> R
+R38:38 tp2 <> E defax
+R33:33 tp2 <> E defax
+ax 56:59 <> refl
+R76:76 tp2 <> E defax
+R79:79 tp2 <> R defax
+R83:83 tp2 <> x var
+R81:81 tp2 <> x var
+ax 93:97 <> trans
+R117:117 tp2 <> E defax
+R138:138 tp2 <> R defax
+R142:142 tp2 <> z var
+R140:140 tp2 <> x var
+R129:129 tp2 <> R defax
+R133:133 tp2 <> z var
+R131:131 tp2 <> y var
+R120:120 tp2 <> R defax
+R124:124 tp2 <> y var
+R122:122 tp2 <> x var
+ax 152:158 <> antisym
+R176:176 tp2 <> E defax
+R198:200 Coq.Init.Logic <> :type_scope:x_'='_x not
+R197:197 tp2 <> x var
+R201:201 tp2 <> y var
+R188:188 tp2 <> R defax
+R192:192 tp2 <> x var
+R190:190 tp2 <> y var
+R179:179 tp2 <> R defax
+R183:183 tp2 <> y var
+R181:181 tp2 <> x var
+def 216:223 <> smallest
+R231:231 tp2 <> E defax
+R248:248 tp2 <> E defax
+R251:251 tp2 <> R defax
+R256:256 tp2 <> x var
+R253:254 tp2 <> x0 var
+def 271:277 <> minimal
+R285:285 tp2 <> E defax
+R302:302 tp2 <> E defax
+R316:318 Coq.Init.Logic <> :type_scope:x_'='_x not
+R315:315 tp2 <> x var
+R319:320 tp2 <> x0 var
+R305:305 tp2 <> R defax
+R309:310 tp2 <> x0 var
+R307:307 tp2 <> x var
+prf 330:344 <> unicite_minimal
+R362:362 tp2 <> E defax
+R394:396 Coq.Init.Logic <> :type_scope:x_'='_x not
+R393:393 tp2 <> x var
+R397:397 tp2 <> y var
+R379:386 tp2 <> smallest def
+R388:388 tp2 <> y var
+R365:372 tp2 <> smallest def
+R374:374 tp2 <> x var
+R423:430 tp2 <> smallest def
+R439:445 tp2 <> antisym prfax
+R439:445 tp2 <> antisym prfax
+prf 478:496 <> smallest_is_minimal
+R512:512 tp2 <> E defax
+R529:535 tp2 <> minimal def
+R537:537 tp2 <> x var
+R515:522 tp2 <> smallest def
+R524:524 tp2 <> x var
+R563:569 tp2 <> minimal def
+R586:592 tp2 <> antisym prfax
+R586:592 tp2 <> antisym prfax
+prf 628:651 <> smallest_is_only_minimal
+R669:669 tp2 <> E defax
+R700:702 Coq.Init.Logic <> :type_scope:x_'='_x not
+R699:699 tp2 <> x var
+R703:703 tp2 <> y var
+R686:692 tp2 <> minimal def
+R694:694 tp2 <> y var
+R672:679 tp2 <> smallest def
+R681:681 tp2 <> x var

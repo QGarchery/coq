@@ -1,0 +1,177 @@
+DIGEST 4fbd05c558086b5919758a75b7dd5b76
+Ftp2_3
+ax 10:10 <> E
+def 30:35 <> subset
+R50:50 tp2_3 <> E defax
+R78:78 tp2_3 <> E defax
+R91:94 tp2_3 <> AppY var
+R96:96 tp2_3 <> e var
+R81:84 tp2_3 <> AppX var
+R86:86 tp2_3 <> e var
+prf 106:113 <> sub_refl
+R132:132 tp2_3 <> E defax
+R143:148 tp2_3 <> subset def
+R155:158 tp2_3 <> AppX var
+R150:153 tp2_3 <> AppX var
+R184:189 tp2_3 <> subset def
+prf 224:232 <> sub_trans
+R260:260 tp2_3 <> E defax
+R311:316 tp2_3 <> subset def
+R323:326 tp2_3 <> AppZ var
+R318:321 tp2_3 <> AppX var
+R291:296 tp2_3 <> subset def
+R303:306 tp2_3 <> AppZ var
+R298:301 tp2_3 <> AppY var
+R271:276 tp2_3 <> subset def
+R283:286 tp2_3 <> AppY var
+R278:281 tp2_3 <> AppX var
+R352:357 tp2_3 <> subset def
+def 417:418 <> eq
+R433:433 tp2_3 <> E defax
+R461:461 tp2_3 <> E defax
+R470:474 Coq.Init.Logic <> :type_scope:x_'<->'_x not
+R464:467 tp2_3 <> AppX var
+R469:469 tp2_3 <> e var
+R475:478 tp2_3 <> AppY var
+R480:480 tp2_3 <> e var
+prf 490:496 <> eq_refl
+R515:515 tp2_3 <> E defax
+R526:527 tp2_3 <> eq def
+R534:537 tp2_3 <> AppX var
+R529:532 tp2_3 <> AppX var
+R563:564 tp2_3 <> eq def
+prf 612:619 <> eq_trans
+R648:648 tp2_3 <> E defax
+R691:692 tp2_3 <> eq def
+R699:702 tp2_3 <> AppZ var
+R694:697 tp2_3 <> AppX var
+R675:676 tp2_3 <> eq def
+R683:686 tp2_3 <> AppZ var
+R678:681 tp2_3 <> AppY var
+R659:660 tp2_3 <> eq def
+R667:670 tp2_3 <> AppY var
+R662:665 tp2_3 <> AppX var
+R728:729 tp2_3 <> eq def
+prf 834:839 <> eq_sym
+R865:865 tp2_3 <> E defax
+R892:893 tp2_3 <> eq def
+R900:903 tp2_3 <> AppX var
+R895:898 tp2_3 <> AppY var
+R876:877 tp2_3 <> eq def
+R884:887 tp2_3 <> AppY var
+R879:882 tp2_3 <> AppX var
+R929:930 tp2_3 <> eq def
+def 992:996 <> union
+R1006:1006 tp2_3 <> E defax
+R1025:1025 tp2_3 <> E defax
+R1041:1041 tp2_3 <> E defax
+R1055:1058 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R1049:1052 tp2_3 <> AppX var
+R1054:1054 tp2_3 <> e var
+R1059:1062 tp2_3 <> AppY var
+R1065:1065 tp2_3 <> e var
+def 1080:1091 <> intersection
+R1101:1101 tp2_3 <> E defax
+R1120:1120 tp2_3 <> E defax
+R1136:1136 tp2_3 <> E defax
+R1150:1153 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R1144:1147 tp2_3 <> AppX var
+R1149:1149 tp2_3 <> e var
+R1154:1157 tp2_3 <> AppY var
+R1160:1160 tp2_3 <> e var
+prf 1170:1179 <> union_comm
+R1203:1203 tp2_3 <> E defax
+R1214:1215 tp2_3 <> eq def
+R1236:1240 tp2_3 <> union def
+R1247:1250 tp2_3 <> AppX var
+R1242:1245 tp2_3 <> AppY var
+R1218:1222 tp2_3 <> union def
+R1229:1232 tp2_3 <> AppY var
+R1224:1227 tp2_3 <> AppX var
+R1278:1279 tp2_3 <> eq def
+R1311:1315 tp2_3 <> union def
+R1382:1386 tp2_3 <> union def
+prf 1450:1465 <> intersection_com
+R1490:1490 tp2_3 <> E defax
+R1501:1502 tp2_3 <> eq def
+R1530:1541 tp2_3 <> intersection def
+R1548:1551 tp2_3 <> AppX var
+R1543:1546 tp2_3 <> AppY var
+R1505:1516 tp2_3 <> intersection def
+R1523:1526 tp2_3 <> AppY var
+R1518:1521 tp2_3 <> AppX var
+R1578:1579 tp2_3 <> eq def
+R1611:1622 tp2_3 <> intersection def
+R1670:1681 tp2_3 <> intersection def
+prf 1727:1737 <> union_indem
+R1756:1756 tp2_3 <> E defax
+R1767:1768 tp2_3 <> eq def
+R1776:1780 tp2_3 <> union def
+R1787:1790 tp2_3 <> AppX var
+R1782:1785 tp2_3 <> AppX var
+R1770:1773 tp2_3 <> AppX var
+R1817:1818 tp2_3 <> eq def
+R1850:1854 tp2_3 <> union def
+R1883:1887 tp2_3 <> union def
+prf 1933:1950 <> intersection_indem
+R1969:1969 tp2_3 <> E defax
+R1980:1981 tp2_3 <> eq def
+R1989:2000 tp2_3 <> intersection def
+R2007:2010 tp2_3 <> AppX var
+R2002:2005 tp2_3 <> AppX var
+R1983:1986 tp2_3 <> AppX var
+R2037:2038 tp2_3 <> eq def
+R2069:2080 tp2_3 <> intersection def
+R2109:2120 tp2_3 <> intersection def
+prf 2166:2176 <> union_assoc
+R2205:2205 tp2_3 <> E defax
+R2220:2221 tp2_3 <> eq def
+R2255:2259 tp2_3 <> union def
+R2279:2282 tp2_3 <> AppZ var
+R2262:2266 tp2_3 <> union def
+R2273:2276 tp2_3 <> AppY var
+R2268:2271 tp2_3 <> AppX var
+R2224:2228 tp2_3 <> union def
+R2236:2240 tp2_3 <> union def
+R2247:2250 tp2_3 <> AppZ var
+R2242:2245 tp2_3 <> AppY var
+R2230:2233 tp2_3 <> AppX var
+R2309:2310 tp2_3 <> eq def
+R2341:2345 tp2_3 <> union def
+R2454:2458 tp2_3 <> union def
+prf 2566:2582 <> intersection_comm
+R2611:2611 tp2_3 <> E defax
+R2626:2627 tp2_3 <> eq def
+R2675:2686 tp2_3 <> intersection def
+R2713:2716 tp2_3 <> AppZ var
+R2689:2700 tp2_3 <> intersection def
+R2707:2710 tp2_3 <> AppY var
+R2702:2705 tp2_3 <> AppX var
+R2630:2641 tp2_3 <> intersection def
+R2649:2660 tp2_3 <> intersection def
+R2667:2670 tp2_3 <> AppZ var
+R2662:2665 tp2_3 <> AppY var
+R2643:2646 tp2_3 <> AppX var
+R2744:2745 tp2_3 <> eq def
+R2769:2780 tp2_3 <> intersection def
+prf 2929:2933 <> distr
+R2962:2962 tp2_3 <> E defax
+R2977:2978 tp2_3 <> eq def
+R3027:3031 tp2_3 <> union def
+R3059:3070 tp2_3 <> intersection def
+R3077:3080 tp2_3 <> AppZ var
+R3072:3075 tp2_3 <> AppX var
+R3034:3045 tp2_3 <> intersection def
+R3052:3055 tp2_3 <> AppY var
+R3047:3050 tp2_3 <> AppX var
+R2981:2992 tp2_3 <> intersection def
+R3000:3004 tp2_3 <> union def
+R3011:3014 tp2_3 <> AppZ var
+R3006:3009 tp2_3 <> AppY var
+R2994:2997 tp2_3 <> AppX var
+R3110:3111 tp2_3 <> eq def
+R3142:3146 tp2_3 <> union def
+R3187:3198 tp2_3 <> intersection def
+R3253:3264 tp2_3 <> intersection def
+R3317:3321 tp2_3 <> union def
+R3380:3384 tp2_3 <> union def
