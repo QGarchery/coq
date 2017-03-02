@@ -244,3 +244,18 @@ unfold union.
 right.
 assumption.
 Qed.
+
+Lemma sub_antisym:
+  forall AppX AppY : E -> Prop,
+    subset AppX AppY -> subset AppY AppX -> eq AppX AppY.
+
+Proof.
+intros.
+unfold eq.
+intro.
+split; intro.
+apply H.
+assumption.
+apply H0.
+assumption.
+Qed.

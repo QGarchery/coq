@@ -1,4 +1,4 @@
-DIGEST 4fbd05c558086b5919758a75b7dd5b76
+DIGEST 67bf0917ae2052a5a7c4fd0dd46a492b
 Ftp2_3
 ax 10:10 <> E
 def 30:35 <> subset
@@ -175,3 +175,15 @@ R3187:3198 tp2_3 <> intersection def
 R3253:3264 tp2_3 <> intersection def
 R3317:3321 tp2_3 <> union def
 R3380:3384 tp2_3 <> union def
+prf 3418:3428 <> sub_antisym
+R3452:3452 tp2_3 <> E defax
+R3507:3508 tp2_3 <> eq def
+R3515:3518 tp2_3 <> AppY var
+R3510:3513 tp2_3 <> AppX var
+R3487:3492 tp2_3 <> subset def
+R3499:3502 tp2_3 <> AppX var
+R3494:3497 tp2_3 <> AppY var
+R3467:3472 tp2_3 <> subset def
+R3479:3482 tp2_3 <> AppY var
+R3474:3477 tp2_3 <> AppX var
+R3544:3545 tp2_3 <> eq def
