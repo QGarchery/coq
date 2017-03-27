@@ -235,3 +235,75 @@ Proof.
   assumption.
   assumption.
 Qed.
+
+
+
+Lemma clos1_in_clos3 :
+  forall x y : T,
+    forall R : T -> T -> Prop,
+      clos1 R x y -> clos3 R x y.
+
+Proof.
+  intros.
+  induction H.
+  apply clos3_base.
+  assumption.
+  apply clos3_refl.
+  apply (clos3_trans R x y z).
+  assumption.
+  assumption.
+Qed.
+
+
+Lemma puiss_in_clos1:
+  forall R : T -> T -> Prop,
+    forall n : nat,
+      forall x y : T,
+        puiss n R x y -> clos1 R x y.
+
+Proof.
+  intro.
+  induction n.
+- 
+intros.
+rewrite H.
+apply cl1_refl.
+-
+intros.
+destruct H.
+destruct H.
+apply (cl1_trans R x x0 y).
+apply cl1_base.
+assumption.
+apply IHn.
+assumption.
+Qed.
+
+Lemma clos3_in_clos1 :
+  forall x y : T,
+    forall R : T -> T -> Prop,
+      clos3 R x y -> clos1 R x y.
+
+Proof.
+  intros.
+  destruct H.
+  apply (puiss_in_clos1 R x0 x y).
+  assumption.
+Qed.
+
+
+Lemma clos3_eq_clos2:
+  forall x y : T,
+    forall R : T -> T -> Prop,
+      clos3 R x y <-> clos2 R x y.
+
+Proof.
+  intros.
+  split; intros.
+  apply clos1_in_clos2.
+  apply clos3_in_clos1.
+  assumption.
+  apply clos1_in_clos3.
+  apply clos2_in_clos1.
+  assumption.
+Qed.

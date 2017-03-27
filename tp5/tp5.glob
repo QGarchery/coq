@@ -1,4 +1,4 @@
-DIGEST 42fea768e3fd83ed92ed7b218327e082
+DIGEST 194c3b2429920281cb6c256570809cfc
 Ftp5
 ax 10:10 <> T
 R34:38 Coq.Arith.Arith <> <> lib
@@ -332,3 +332,76 @@ R3881:3883 Coq.Init.Peano <> :nat_scope:x_'+'_x not
 R3881:3883 Coq.Init.Peano <> :nat_scope:x_'+'_x not
 R3898:3909 tp5 <> adding_puiss thm
 R3898:3909 tp5 <> adding_puiss thm
+prf 3969:3982 <> clos1_in_clos3
+R4001:4001 tp5 <> T defax
+R4024:4024 tp5 <> T defax
+R4019:4019 tp5 <> T defax
+R4056:4060 tp5 <> clos3 def
+R4066:4066 tp5 <> y var
+R4064:4064 tp5 <> x var
+R4062:4062 tp5 <> R var
+R4041:4045 tp5 <> clos1 ind
+R4051:4051 tp5 <> y var
+R4049:4049 tp5 <> x var
+R4047:4047 tp5 <> R var
+R4110:4119 tp5 <> clos3_base thm
+R4110:4119 tp5 <> clos3_base thm
+R4144:4153 tp5 <> clos3_refl thm
+R4144:4153 tp5 <> clos3_refl thm
+R4165:4175 tp5 <> clos3_trans thm
+R4165:4175 tp5 <> clos3_trans thm
+prf 4228:4241 <> puiss_in_clos1
+R4262:4262 tp5 <> T defax
+R4257:4257 tp5 <> T defax
+R4288:4290 Coq.Init.Datatypes <> nat ind
+R4312:4312 tp5 <> T defax
+R4340:4344 tp5 <> clos1 ind
+R4350:4350 tp5 <> y var
+R4348:4348 tp5 <> x var
+R4346:4346 tp5 <> R var
+R4323:4327 tp5 <> puiss def
+R4335:4335 tp5 <> y var
+R4333:4333 tp5 <> x var
+R4331:4331 tp5 <> R var
+R4329:4329 tp5 <> n var
+R4413:4420 tp5 <> cl1_refl constr
+R4413:4420 tp5 <> cl1_refl constr
+R4464:4472 tp5 <> cl1_trans constr
+R4464:4472 tp5 <> cl1_trans constr
+R4491:4498 tp5 <> cl1_base constr
+R4491:4498 tp5 <> cl1_base constr
+prf 4548:4561 <> clos3_in_clos1
+R4580:4580 tp5 <> T defax
+R4603:4603 tp5 <> T defax
+R4598:4598 tp5 <> T defax
+R4635:4639 tp5 <> clos1 ind
+R4645:4645 tp5 <> y var
+R4643:4643 tp5 <> x var
+R4641:4641 tp5 <> R var
+R4620:4624 tp5 <> clos3 def
+R4630:4630 tp5 <> y var
+R4628:4628 tp5 <> x var
+R4626:4626 tp5 <> R var
+R4689:4702 tp5 <> puiss_in_clos1 thm
+R4689:4702 tp5 <> puiss_in_clos1 thm
+prf 4742:4755 <> clos3_eq_clos2
+R4773:4773 tp5 <> T defax
+R4796:4796 tp5 <> T defax
+R4791:4791 tp5 <> T defax
+R4824:4828 Coq.Init.Logic <> :type_scope:x_'<->'_x not
+R4813:4817 tp5 <> clos3 def
+R4823:4823 tp5 <> y var
+R4821:4821 tp5 <> x var
+R4819:4819 tp5 <> R var
+R4829:4833 tp5 <> clos2 ind
+R4839:4839 tp5 <> y var
+R4837:4837 tp5 <> x var
+R4835:4835 tp5 <> R var
+R4885:4898 tp5 <> clos1_in_clos2 thm
+R4885:4898 tp5 <> clos1_in_clos2 thm
+R4909:4922 tp5 <> clos3_in_clos1 thm
+R4909:4922 tp5 <> clos3_in_clos1 thm
+R4947:4960 tp5 <> clos1_in_clos3 thm
+R4947:4960 tp5 <> clos1_in_clos3 thm
+R4971:4984 tp5 <> clos2_in_clos1 thm
+R4971:4984 tp5 <> clos2_in_clos1 thm
