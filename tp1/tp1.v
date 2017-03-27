@@ -1,8 +1,10 @@
 Lemma and_commut :
 forall A B : Prop, A /\ B <-> B /\ A.
 
+
 Proof.
 intros. split.
+
 - intros. destruct H. split. assumption. assumption.
 - intros. destruct H. split; assumption.
 Qed.

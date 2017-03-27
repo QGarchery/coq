@@ -1,4 +1,4 @@
-DIGEST f71166b3cc231534bbc5c302e45596aa
+DIGEST 1d29161ca3db9233cb44c5c9cb48fd74
 Ftp1
 prf 6:15 <> and_commut
 R44:48 Coq.Init.Logic <> :type_scope:x_'<->'_x not
@@ -8,81 +8,81 @@ R43:43 tp1 <> B var
 R50:53 Coq.Init.Logic <> :type_scope:x_'/\'_x not
 R49:49 tp1 <> B var
 R54:54 tp1 <> A var
-prf 186:189 <> toto
-R215:215 tp1 <> A var
-R210:210 tp1 <> A var
-ax 267:267 <> A
-ax 269:269 <> B
-ax 271:271 <> C
-prf 288:292 <> totoo
-R300:300 tp1 <> A defax
-R297:297 tp1 <> A defax
-prf 342:346 <> trans
-R375:375 tp1 <> C defax
-R372:372 tp1 <> A defax
-R365:365 tp1 <> C defax
-R362:362 tp1 <> B defax
-R355:355 tp1 <> B defax
-R352:352 tp1 <> A defax
-prf 438:445 <> and_comm
-R453:457 Coq.Init.Logic <> :type_scope:x_'<->'_x not
-R449:451 Coq.Init.Logic <> :type_scope:x_'/\'_x not
-R448:448 tp1 <> A defax
-R452:452 tp1 <> B defax
-R459:461 Coq.Init.Logic <> :type_scope:x_'/\'_x not
-R458:458 tp1 <> B defax
-R462:462 tp1 <> A defax
-prf 530:536 <> or_comm
-R548:550 Coq.Init.Logic <> :type_scope:x_'\/'_x not
-R547:547 tp1 <> B defax
-R551:551 tp1 <> A defax
-R540:541 Coq.Init.Logic <> :type_scope:x_'\/'_x not
-R539:539 tp1 <> A defax
-R542:542 tp1 <> B defax
-prf 630:638 <> and_assoc
-R659:663 Coq.Init.Logic <> :type_scope:x_'/\'_x not
-R670:670 Coq.Init.Logic <> :type_scope:x_'/\'_x not
-R658:658 tp1 <> A defax
-R665:668 Coq.Init.Logic <> :type_scope:x_'/\'_x not
-R664:664 tp1 <> B defax
-R669:669 tp1 <> C defax
-R641:641 Coq.Init.Logic <> :type_scope:x_'/\'_x not
-R648:652 Coq.Init.Logic <> :type_scope:x_'/\'_x not
-R643:646 Coq.Init.Logic <> :type_scope:x_'/\'_x not
-R642:642 tp1 <> A defax
-R647:647 tp1 <> B defax
-R653:653 tp1 <> C defax
-prf 761:768 <> or_assoc
-R784:788 Coq.Init.Logic <> :type_scope:x_'<->'_x not
-R771:771 Coq.Init.Logic <> :type_scope:x_'\/'_x not
-R778:782 Coq.Init.Logic <> :type_scope:x_'\/'_x not
-R773:776 Coq.Init.Logic <> :type_scope:x_'\/'_x not
-R772:772 tp1 <> A defax
-R777:777 tp1 <> B defax
-R783:783 tp1 <> C defax
-R790:794 Coq.Init.Logic <> :type_scope:x_'\/'_x not
-R801:801 Coq.Init.Logic <> :type_scope:x_'\/'_x not
-R789:789 tp1 <> A defax
-R796:799 Coq.Init.Logic <> :type_scope:x_'\/'_x not
-R795:795 tp1 <> B defax
-R800:800 tp1 <> C defax
-prf 1031:1038 <> add_tilt
-R1046:1046 Coq.Init.Logic <> :type_scope:'~'_x not
-R1047:1047 Coq.Init.Logic <> :type_scope:'~'_x not
-R1048:1048 tp1 <> A defax
-R1041:1041 tp1 <> A defax
-prf 1109:1122 <> contraposition
-R1143:1144 Coq.Init.Logic <> :type_scope:'~'_x not
-R1145:1145 tp1 <> A defax
-R1137:1137 Coq.Init.Logic <> :type_scope:'~'_x not
-R1138:1138 tp1 <> B defax
-R1131:1131 tp1 <> B defax
-R1126:1126 tp1 <> A defax
-prf 1216:1225 <> almost_TND
-R1228:1228 Coq.Init.Logic <> :type_scope:'~'_x not
-R1229:1230 Coq.Init.Logic <> :type_scope:'~'_x not
+prf 188:191 <> toto
+R217:217 tp1 <> A var
+R212:212 tp1 <> A var
+ax 269:269 <> A
+ax 271:271 <> B
+ax 273:273 <> C
+prf 290:294 <> totoo
+R302:302 tp1 <> A defax
+R299:299 tp1 <> A defax
+prf 344:348 <> trans
+R377:377 tp1 <> C defax
+R374:374 tp1 <> A defax
+R367:367 tp1 <> C defax
+R364:364 tp1 <> B defax
+R357:357 tp1 <> B defax
+R354:354 tp1 <> A defax
+prf 440:447 <> and_comm
+R455:459 Coq.Init.Logic <> :type_scope:x_'<->'_x not
+R451:453 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R450:450 tp1 <> A defax
+R454:454 tp1 <> B defax
+R461:463 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R460:460 tp1 <> B defax
+R464:464 tp1 <> A defax
+prf 532:538 <> or_comm
+R550:552 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R549:549 tp1 <> B defax
+R553:553 tp1 <> A defax
+R542:543 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R541:541 tp1 <> A defax
+R544:544 tp1 <> B defax
+prf 632:640 <> and_assoc
+R661:665 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R672:672 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R660:660 tp1 <> A defax
+R667:670 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R666:666 tp1 <> B defax
+R671:671 tp1 <> C defax
+R643:643 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R650:654 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R645:648 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R644:644 tp1 <> A defax
+R649:649 tp1 <> B defax
+R655:655 tp1 <> C defax
+prf 763:770 <> or_assoc
+R786:790 Coq.Init.Logic <> :type_scope:x_'<->'_x not
+R773:773 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R780:784 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R775:778 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R774:774 tp1 <> A defax
+R779:779 tp1 <> B defax
+R785:785 tp1 <> C defax
+R792:796 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R803:803 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R791:791 tp1 <> A defax
+R798:801 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R797:797 tp1 <> B defax
+R802:802 tp1 <> C defax
+prf 1033:1040 <> add_tilt
+R1048:1048 Coq.Init.Logic <> :type_scope:'~'_x not
+R1049:1049 Coq.Init.Logic <> :type_scope:'~'_x not
+R1050:1050 tp1 <> A defax
+R1043:1043 tp1 <> A defax
+prf 1111:1124 <> contraposition
+R1145:1146 Coq.Init.Logic <> :type_scope:'~'_x not
+R1147:1147 tp1 <> A defax
+R1139:1139 Coq.Init.Logic <> :type_scope:'~'_x not
+R1140:1140 tp1 <> B defax
+R1133:1133 tp1 <> B defax
+R1128:1128 tp1 <> A defax
+prf 1218:1227 <> almost_TND
+R1230:1230 Coq.Init.Logic <> :type_scope:'~'_x not
+R1231:1232 Coq.Init.Logic <> :type_scope:'~'_x not
+R1240:1240 Coq.Init.Logic <> :type_scope:'~'_x not
+R1234:1237 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R1233:1233 tp1 <> A defax
 R1238:1238 Coq.Init.Logic <> :type_scope:'~'_x not
-R1232:1235 Coq.Init.Logic <> :type_scope:x_'\/'_x not
-R1231:1231 tp1 <> A defax
-R1236:1236 Coq.Init.Logic <> :type_scope:'~'_x not
-R1237:1237 tp1 <> A defax
+R1239:1239 tp1 <> A defax
