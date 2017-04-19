@@ -172,7 +172,7 @@ Proof.
   intros.
   destruct H.
   induction x0.
-  
+  inversion H.
 
 
   
