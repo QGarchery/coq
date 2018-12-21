@@ -3,11 +3,11 @@
 Require Import Arith.
 
 (* look how natural numbers are defined *)
-Print nat.
 
-Search (0 <= _).
+(* Search (0 <= _). *)
 
-Search (0 < _).
+(* Locate "<". *)
+(* Search (0 < _). *)
 
 (* we want to compare natural numbers *)
 Fixpoint comp x y :=
@@ -23,20 +23,17 @@ Fixpoint comp x y :=
 Lemma comp_corr : forall x y,
     (comp x y = true /\ x<=y)
     \/(comp x y = false /\ y<x).
-Proof.  
+Proof.
   induction x as [|x]; destruct y as [|y].
   - left; auto.
   - left. split.
-    simpl.
     reflexivity.
     apply le_0_n.
   - right.
     split.
-    simpl.
     reflexivity.
     apply lt_0_Sn.
-  - simpl.
-    assert (comp x y = true /\ x <= y \/ comp x y = false /\ y < x).
+  - assert (comp x y = true /\ x <= y \/ comp x y = false /\ y < x).
     apply IHx.
     intuition.
 Qed.
@@ -46,7 +43,7 @@ Inductive list :=
   nil | cons : nat -> list -> list.
 
 (* Check the induction principle *)
-Check list_ind.
+(* Check list_ind. *)
 
 Fixpoint app (l m : list) :=
   match l with
@@ -56,22 +53,17 @@ Fixpoint app (l m : list) :=
 
 
 (* easy *)
-Lemma app_ass : forall l m n,
+Lemma app_assoc : forall l m n,
     app l (app m n) = app (app l m) n.
 
 Proof.
-  induction l.
-
-  - simpl.
-    reflexivity.
-
-  - simpl.
-    intros.
+  induction l; simpl.
+  - reflexivity.
+  - intros.
     f_equal.
     apply IHl.
 Qed.
-    
-    
+
 Fixpoint length (l : list) : nat :=
   match l with
   | nil => 0
@@ -81,14 +73,10 @@ Fixpoint length (l : list) : nat :=
 Lemma app_length :
   forall l m, length (app l m) = length l + length m.
 
-Proof.  
-  induction l.
-
-  -  simpl.
-     reflexivity.
-
-  -  simpl.
-     intro.
+Proof.
+  induction l; simpl.
+  -  reflexivity.
+  -  intro.
      f_equal.
      apply IHl.
 Qed.
@@ -113,7 +101,7 @@ Axiom permut_congr : forall x l1 l2,
 Lemma ex : permut (cons 3 (cons 2 (cons 1 nil)))
                   (cons 1 (cons 2 (cons 3 nil))).
 
-Proof.  
+Proof.
   apply permut_trans with (cons 3 (cons 1 (cons 2 nil))).
   apply permut_congr.
   apply (permut_step (cons 1 nil) nil).
@@ -137,14 +125,9 @@ Lemma lower_trans : forall l x y,
     lower x l -> y <= x -> lower y l.
 Proof.
   intros.
-  destruct l.
-
-  -simpl.
-   assumption.
-
-  -simpl.
-   simpl in H.
-   now apply le_trans with x.
+  destruct l; simpl in *.
+  - assumption.
+  - now apply le_trans with x.
 Qed.
 
 
@@ -155,9 +138,9 @@ Qed.
 Fixpoint ins (l : list)(x : nat) :=
   match l with
   | nil => cons x nil
-  | cons y l' as l => if comp x y
-                      then cons x l
-                      else cons y (ins l' x)
+  | cons y l' => if comp x y
+                 then cons x l
+                 else cons y (ins l' x)
   end.
 
 (* use ins to define insertion sort *)
@@ -168,7 +151,7 @@ Fixpoint tri (l : list) : list :=
   end.
 
 
-Eval compute in (tri (cons 4 (cons 2 (cons 1 (cons 5 nil))))).
+(* Eval compute in (tri (cons 4 (cons 2 (cons 1 (cons 5 nil))))). *)
 
 (* Let us prove properties wrt permutation *)
 
@@ -176,13 +159,11 @@ Lemma ins_ex : forall l x, exists l1 l2,
       ins l x = app l1 (cons x l2)
       /\ l = (app l1 l2).
 
-Proof.  
+Proof.
   induction l.
-
   - exists nil, nil.
     simpl.
     intuition.
-
   - intro.
     assert (exists l1 l2 : list, ins l x = app l1 (cons x l2) /\ l = app l1 l2).
     apply IHl.
@@ -203,35 +184,29 @@ Proof.
     intuition.
 Qed.
 
-Lemma ins_permut : forall x l, permut (cons x l)(ins l x).
+Lemma ins_permut : forall x l, permut (cons x l) (ins l x).
 
-Proof.  
+Proof.
   induction l.
-
   - simpl.
     apply permut_refl.
-
-  -  assert ( exists l1 l2 : list, ins (cons n l) x = app l1 (cons x l2)
-      /\ (cons n l) = (app l1 l2)).
-     apply ins_ex.
-     destruct H.
-     destruct H.
-     destruct H.
-     rewrite H.
-     rewrite H0.
-     apply permut_step.
+  - assert ( exists l1 l2 : list, ins (cons n l) x = app l1 (cons x l2)
+     /\ (cons n l) = (app l1 l2)).
+    apply ins_ex.
+    destruct H.
+    destruct H.
+    destruct H.
+    rewrite H.
+    rewrite H0.
+    apply permut_step.
 Qed.
-     
+
 Lemma tri_permut : forall l, permut l (tri l).
 
-Proof.  
-  induction l.
-
-  - simpl.
-    apply permut_refl.
-
-  - simpl.
-    destruct (ins_ex (tri l) n).
+Proof.
+  induction l; simpl.
+  - apply permut_refl.
+  - destruct (ins_ex (tri l) n).
     destruct H.
     destruct H.
     rewrite H.
@@ -251,12 +226,10 @@ Qed.
 (* Can you see which one ?? *)
 Lemma ins_sorted : forall x l, sorted l -> sorted (ins l x).
 
-Proof.  
+Proof.
   induction l.
-
   - simpl.
     intuition.
-
   - intro.
     destruct (comp_corr x n).
     simpl.
@@ -288,21 +261,17 @@ Proof.
     apply IHl.
     destruct H.
     assumption.
-Qed.    
+Qed.
 
 Lemma tri_sorted : forall l, sorted (tri l).
 
 Proof.
-  induction l.
-  
-  - simpl.
-    reflexivity.
-
-  - simpl.
-    apply ins_sorted.
+  induction l; simpl.
+  - reflexivity.
+  - apply ins_sorted.
     assumption.
 Qed.
-    
+
     (* Functional heapsort *)
 
 (* insertion sort is of complexity n^2  *)
@@ -313,9 +282,9 @@ Inductive tree :=
   | Leaf : tree
   | Node : nat -> tree -> tree -> tree.
 
-Check tree_ind.
+(* Check tree_ind. *)
 
-Fixpoint tinsert t x :=
+Fixpoint tinsert x t :=
   match t with
   | Leaf => (Node x Leaf Leaf)
   | Node y t1 t2 =>
